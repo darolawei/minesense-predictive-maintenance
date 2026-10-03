@@ -140,20 +140,26 @@ Run the dashboard type check:
 pnpm --filter @workspace/minesense-maintenance run typecheck
 ```
 
-## GitHub publishing
+## GitHub repository
 
-From the project root:
+The source code is hosted at [github.com/darolawei/minesense-predictive-maintenance](https://github.com/darolawei/minesense-predictive-maintenance).
+
+Clone the repository and enter the project directory:
 
 ```bash
-git init
-git add .
-git commit -m "Add MineSense predictive maintenance prototype"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-git push -u origin main
+git clone https://github.com/darolawei/minesense-predictive-maintenance.git
+cd minesense-predictive-maintenance/MineSense-Predictive-Maintenance
 ```
 
-The repository already ignores generated files, dependencies, IDE settings, and local Replit files through `.gitignore`.
+To publish future changes, stage and commit them from the repository root, then push to `main`:
+
+```bash
+git add -A
+git commit -m "Describe your changes"
+git push origin main
+```
+
+The repository ignores generated files, dependencies, IDE settings, and local Replit files through `.gitignore`.
 
 ## Project structure
 
